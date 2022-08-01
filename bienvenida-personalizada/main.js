@@ -7,7 +7,7 @@ function setUserName() {
         setUserName();
     } else {
         localStorage.setItem('name', currName);
-        currTitle.textContent = 'Bienvenido ' + currName;
+        currTitle.textContent = 'Bienvenido, ' + currName;
     }
 }
 
@@ -15,7 +15,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    currTitle.textContent = 'Bienvenido,' + storedName;
+    currTitle.textContent = 'Bienvenido, ' + storedName;
 }
 
 cButton.onclick = function() {
